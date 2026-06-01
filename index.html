@@ -12,6 +12,7 @@
       line-height: 1.6;
       background: #f5f7fa;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -22,22 +23,29 @@
     }
 
     nav {
+      position: sticky;
+      top: 0;
       background: #163044;
       padding: 1rem;
       text-align: center;
+      z-index: 1000;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #a8c5ff;
     }
 
     section {
       background: white;
       margin: 20px auto;
-      padding: 20px;
+      padding: 25px;
       max-width: 1000px;
       border-radius: 10px;
     }
@@ -48,12 +56,8 @@
       padding-bottom: 5px;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1f3b57;
-      color: white;
-      margin-top: 30px;
+    h3 {
+      color: #2c4a66;
     }
 
     .tag {
@@ -64,6 +68,14 @@
       border-radius: 5px;
       font-size: 0.9em;
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f3b57;
+      color: white;
+      margin-top: 30px;
+    }
   </style>
 </head>
 
@@ -71,17 +83,16 @@
 
 <header>
   <h1>Professional & Spiritual Growth Portfolio</h1>
-  <p>IT 497 | Technical Skills • Leadership • Faith • Personal Development</p>
+  <p>IT 497 | Technical Skills • Leadership • Faith • Ethical Development</p>
 </header>
 
 <nav>
   <a href="#home">Home</a>
-  <a href="#about">About Me</a>
-  <a href="#goals">SMART Goals</a>
+  <a href="#about">About</a>
+  <a href="#goals">Goals</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
-  <a href="#spiritual">Spiritual Growth</a>
-  <a href="#ethics">Ethics</a>
+  <a href="#reflection">Reflection</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -89,9 +100,8 @@
 <section id="home">
   <h2>Home</h2>
   <p>
-    Welcome to my professional portfolio. This website showcases my technical development,
-    leadership growth, and spiritual learning journey as I prepare for a career in IT support,
-    systems administration, and technology leadership.
+    Welcome to my professional portfolio. This site showcases my technical, spiritual,
+    and ethical growth through IT studies and project development.
   </p>
 </section>
 
@@ -99,109 +109,149 @@
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am a student pursuing growth in information technology, technical support, and leadership.
-    My personal values include integrity, service, continuous learning, and disciple leadership.
+    I am an IT student focused on technical support, programming, and leadership development.
+    My values include integrity, service, responsibility, and continuous learning.
   </p>
 </section>
 
-<!-- SMART GOALS -->
+<!-- GOALS -->
 <section id="goals">
   <h2>SMART Goals</h2>
 
-  <h3>1. Professional Digital Portfolio</h3>
-  <p>Develop and publish a portfolio including résumé, projects, certifications, and reflections.</p>
+  <h3>Professional Development</h3>
+  <p>Build a strong digital portfolio demonstrating technical and ethical growth.</p>
 
-  <h3>2. Technical & Communication Growth</h3>
-  <p>Improve documentation, communication, and technical presentation skills through coursework.</p>
+  <h3>Technical Skills</h3>
+  <p>Improve Python programming, troubleshooting, and system design skills.</p>
 
-  <h3>3. Spiritual Integration</h3>
-  <p>Connect gospel principles such as integrity, service, and leadership into professional development.</p>
+  <h3>Spiritual Integration</h3>
+  <p>Apply principles of integrity, service, and accountability in all professional work.</p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <h2>Technical Skills & Certifications</h2>
+  <h2>Technical Skills</h2>
 
   <span class="tag">Technical Support</span>
-  <span class="tag">Troubleshooting</span>
   <span class="tag">Python Programming</span>
   <span class="tag">Cybersecurity Awareness</span>
-  <span class="tag">Project Management</span>
-  <span class="tag">Team Collaboration</span>
+  <span class="tag">Problem Solving</span>
   <span class="tag">Documentation</span>
+  <span class="tag">Team Collaboration</span>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <h3>Cybersecurity Awareness Project</h3>
-  <p>Focused on improving digital safety and understanding secure system practices.</p>
-
-  <h3>Python Programming Assignments</h3>
-  <p>Developed programs for problem-solving, logic building, and data handling.</p>
+  <h3>Password Strength Checker</h3>
+  <p>
+    A Python-based tool that evaluates password strength using length, complexity,
+    and weak pattern detection. It helps users improve cybersecurity habits.
+  </p>
 
   <h3>Technical Support Practice</h3>
-  <p>Hands-on troubleshooting and IT support scenarios to strengthen real-world skills.</p>
+  <p>
+    Hands-on troubleshooting exercises that simulate real-world IT support scenarios.
+  </p>
 </section>
 
-<!-- SPIRITUAL -->
-<section id="spiritual">
-  <h2>Spiritual & Leadership Growth</h2>
+<!-- REFLECTION (TASK 2 + TASK 3 FULL INTEGRATION) -->
+<section id="reflection">
+  <h2>Spiritual & Professional Growth Portfolio</h2>
 
-  <h3>Core Principles</h3>
-  <ul>
-    <li>Faith in Jesus Christ</li>
-    <li>Service and Disciple Leadership</li>
-    <li>Continuous Learning and Growth</li>
-  </ul>
-
-  <h3>Key Reflections</h3>
+  <h3>1. Spiritual Reflections Collection</h3>
   <p>
-    I believe that spiritual growth and professional development are interconnected.
-    My experiences have taught me that challenges build patience, discipline, and faith.
+    My spiritual development during this course has focused on aligning my actions with principles
+    such as integrity, responsibility, compassion, and service.
   </p>
 
-  <h3>Scripture & Guidance</h3>
-  <p><strong>Proverbs 3:5–6</strong> — Trust in the Lord with all thine heart.</p>
-  <p><strong>D&amp;C 58:27–28</strong> — Be anxiously engaged in a good cause.</p>
-</section>
-
-<!-- ETHICS -->
-<section id="ethics">
-  <h2>Ethical Issue in IT</h2>
-
-  <h3>Misuse of Administrative Privileges</h3>
   <p>
-    A key ethical issue in IT is the misuse of administrative access to view or share
-    confidential data without authorization.
+    I have learned that technology can either uplift or harm users depending on how it is designed
+    and implemented. This has encouraged me to view my work as stewardship, where I am responsible
+    for creating tools that respect and protect users.
   </p>
 
-  <h3>Response</h3>
+  <p>
+    Spiritual growth is not separate from professional development. My values influence how I approach
+    coding, teamwork, and decision-making.
+  </p>
+
+  <h3>2. Alignment of Professional Skills with Spiritual Beliefs</h3>
+
+  <p><strong>Integrity:</strong> Writing clean and transparent code builds trust.</p>
+  <p><strong>Responsibility:</strong> Secure applications protect user data.</p>
+  <p><strong>Service:</strong> Software should solve real problems for people.</p>
+  <p><strong>Excellence:</strong> Quality code reflects discipline and stewardship.</p>
+
+  <h3>3. IT Project Reflection + Ethics Integration</h3>
+
+  <h4>Project: Password Strength Checker</h4>
+
+  <p>
+    The system evaluates passwords against weak patterns, dictionary words, and complexity rules.
+  </p>
+
+  <h4>Challenges Identified</h4>
   <ul>
-    <li>Access audits and investigations</li>
-    <li>Revocation of privileges</li>
-    <li>Cybersecurity training</li>
-    <li>Policy enforcement</li>
+    <li>Limited user feedback (no explanation of weaknesses)</li>
+    <li>No accessibility considerations</li>
+    <li>Privacy concerns about password handling</li>
+    <li>Basic rule-based logic</li>
   </ul>
 
-  <h3>Reflection</h3>
+  <h4>Ethical Considerations</h4>
+  <ul>
+    <li>Privacy: No password storage</li>
+    <li>Transparency: Clear evaluation logic</li>
+    <li>Security responsibility: Avoid misleading results</li>
+    <li>User empowerment: Help users improve security</li>
+  </ul>
+
+  <h4>Ethical Principles</h4>
+  <ul>
+    <li>Honesty</li>
+    <li>Privacy</li>
+    <li>Fairness</li>
+    <li>Responsibility</li>
+  </ul>
+
+  <h4>Improved Approach</h4>
+  <ul>
+    <li>Explain why passwords are weak</li>
+    <li>Provide improvement suggestions</li>
+    <li>Ensure no data storage</li>
+    <li>Use real-time evaluation only</li>
+  </ul>
+
+  <h4>Why This Is Better</h4>
   <p>
-    Integrity and accountability are essential in IT. Technical ability must always
-    be guided by ethical responsibility and respect for privacy.
+    This approach improves understanding, builds trust, encourages better behavior,
+    and ensures ethical handling of sensitive data.
+  </p>
+
+  <h4>Project Refinement Summary</h4>
+  <ul>
+    <li>Improved feedback messages</li>
+    <li>Added explanation-based scoring</li>
+    <li>Strengthened privacy protection</li>
+    <li>Improved usability</li>
+  </ul>
+
+  <p>
+    Impact: The system is now more ethical, user-friendly, and educational.
   </p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <h2>Contact & Resume</h2>
-  <p>Email: yourname@email.com</p>
-  <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-  <p>Download Resume: (add PDF link here)</p>
+  <h2>Contact</h2>
+  <p>Email: tmatwale@byupathway.edu</p>
+  <p>LinkedIn: www.linkedin.com/in/thomas-matwale-68527929</p>
 </section>
 
 <footer>
-  <p>© 2026 Professional Portfolio | Built with GitHub Pages</p>
+  <p>© 2026 Professional Portfolio | GitHub Pages</p>
 </footer>
 
 </body>
