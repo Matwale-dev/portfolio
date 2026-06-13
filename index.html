@@ -3,98 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional & Spiritual Growth Portfolio</title>
+  <meta name="description" content="Professional & Spiritual Growth Portfolio - IT 497">
+  <title>Professional & Spiritual Growth Portfolio | IT 497</title>
 
   <style>
     :root {
-      /* Updated Professional Color Palette */
       --primary: #003366;
       --secondary: #005b96;
       --accent: #00a6d6;
       --bg: #f7f9fc;
       --card: #ffffff;
       --text: #2d3748;
-      --muted: #718096;
       --radius: 14px;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-                   sans-serif;
+      font-family: system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
     }
 
-    /* HEADER */
-
     header {
-      background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary)
-      );
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       text-align: center;
       padding: 70px 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.95;
-    }
-
-    /* NAVIGATION */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-
-      background: rgba(0, 51, 102, 0.96);
-      backdrop-filter: blur(10px);
-
+      background: rgba(0,51,102,0.95);
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
-
-      padding: 14px;
+      padding: 12px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: 600;
-      padding: 8px 14px;
+      padding: 8px 12px;
       border-radius: 8px;
-      transition: all 0.3s ease;
+      font-weight: 600;
     }
 
-    nav a:hover {
-      background: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    /* MAIN SECTIONS */
+    nav a:hover { background: var(--accent); }
 
     section {
       max-width: 1000px;
@@ -103,11 +64,6 @@
       padding: 35px;
       border-radius: var(--radius);
       box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
     }
 
     h2 {
@@ -115,316 +71,242 @@
       border-left: 5px solid var(--accent);
       padding-left: 12px;
       margin-bottom: 20px;
-      font-size: 1.8rem;
     }
 
-    h3 {
-      color: var(--secondary);
-      margin-top: 25px;
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    p,
-    li {
-      color: #444;
-    }
-
-    ul {
-      padding-left: 25px;
-      margin-top: 10px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* SKILL TAGS */
-
-    .tag {
-      display: inline-block;
-      background: #e8f7fd;
-      color: var(--primary);
-      border: 1px solid #cbeffd;
-      padding: 8px 12px;
-      margin: 6px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    /* HIGHLIGHT BOXES */
+    h3 { color: var(--secondary); margin-top: 15px; }
 
     .highlight-box {
       background: #f0f9ff;
       border-left: 5px solid var(--accent);
-      padding: 16px;
+      padding: 15px;
       margin: 15px 0;
       border-radius: 8px;
     }
 
-    /* PROJECT CARDS */
-
     .project-card {
-      background: #fafcff;
       border-left: 4px solid var(--accent);
-      padding: 18px;
-      margin: 15px 0;
+      background: #fafcff;
+      padding: 15px;
+      margin: 10px 0;
       border-radius: 10px;
     }
-
-    /* CONTACT */
-
-    .contact-info p {
-      margin-bottom: 10px;
-    }
-
-    /* FOOTER */
 
     footer {
       text-align: center;
       background: var(--primary);
       color: white;
-      padding: 30px;
+      padding: 25px;
       margin-top: 40px;
     }
 
-    /* MOBILE */
-
-    @media (max-width: 768px) {
-
-      header {
-        padding: 50px 20px;
-      }
-
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        margin: 15px;
-        padding: 25px;
-      }
-
-      nav {
-        padding: 10px;
-      }
-
-      nav a {
-        font-size: 0.9rem;
-      }
-    }
+    ul { padding-left: 20px; }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Professional & Spiritual Growth Portfolio</h1>
-    <p>IT 497 | Technical Skills • Leadership • Ethics • Faith Integration</p>
-  </header>
+<header id="top">
+  <h1>Professional & Spiritual Growth Portfolio</h1>
+  <p>IT 497 | Faith • Leadership • Technology • Ethics</p>
+</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#goals">Goals</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#task1">Task 1</a>
-    <a href="#task2">Task 2</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#goals">SMART Goals</a>
+  <a href="#actionplan">Action Plan</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#spiritualfinal">Spiritual Portfolio</a>
+  <a href="#professionalfinal">Professional Portfolio</a>
+  <a href="#reflection">Reflection Essay</a>
+  <a href="#peerreview">Peer Reviews</a>
+  <a href="#future">Future Vision</a>
+  <a href="#contact">Contact</a>
+  <a href="#conclusion">Conclusion</a>
+</nav>
 
-  <section id="home">
-    <h2>Home</h2>
-    <p>
-      Welcome to my Professional and Spiritual Growth Portfolio.
-      This portfolio demonstrates my development in technical skills,
-      ethical decision-making, leadership, and faith integration.
-    </p>
-  </section>
+<!-- HOME -->
+<section id="home">
+  <h2>Home</h2>
+  <p>This portfolio demonstrates my growth in technical skills, leadership, ethics, and spiritual development in IT 497.</p>
+</section>
 
-  <section id="about">
-    <h2>About Me</h2>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am Thomas Chumbi Matwale, a Bachelor of Applied Technology student at BYU–Idaho focused on IT support, programming, and cybersecurity.</p>
+</section>
 
-    <p>
-      I am Thomas Chumbi Matwale, a Bachelor of Applied Technology student
-      at BYU–Idaho with interests in technical support, programming,
-      cybersecurity, and leadership development.
-    </p>
+<!-- SMART GOALS -->
+<section id="goals">
+  <h2>SMART Goals</h2>
 
-    <p>
-      I strive to combine professional excellence with Christlike values,
-      becoming a trustworthy and service-oriented technology professional.
-    </p>
-  </section>
+  <h3>Professional Goal</h3>
+  <p>Build a complete portfolio demonstrating technical and leadership competencies.</p>
 
-  <section id="goals">
-    <h2>SMART Goals</h2>
+  <h3>Technical Goal</h3>
+  <p>Improve Python, troubleshooting, and cybersecurity skills through practice projects.</p>
 
-    <h3>Professional Development</h3>
-    <p>
-      Build a professional portfolio that demonstrates technical competence,
-      ethical leadership, and continuous learning.
-    </p>
+  <h3>Spiritual Goal</h3>
+  <p>Apply integrity, service, and Christlike attributes in all areas of life.</p>
+</section>
 
-    <h3>Technical Development</h3>
-    <p>
-      Improve programming, troubleshooting, cybersecurity awareness,
-      and problem-solving abilities through hands-on projects.
-    </p>
+<!-- ACTION PLAN -->
+<section id="actionplan">
+  <h2>Action Plan for Development</h2>
 
-    <h3>Spiritual Growth</h3>
-    <p>
-      Consistently apply integrity, service, accountability, and faith-based
-      principles in personal and professional settings.
-    </p>
-  </section>
+  <h3>Spiritual Goals</h3>
+  <ul>
+    <li>Daily scripture study and prayer</li>
+    <li>Weekly reflection on Christlike attributes</li>
+    <li>Service participation each month</li>
+  </ul>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
+  <h3>Professional Goals</h3>
+  <ul>
+    <li>Complete coding practice weekly</li>
+    <li>Build 2–3 technical projects per term</li>
+    <li>Improve IT support troubleshooting skills</li>
+  </ul>
 
-    <span class="tag">Technical Support</span>
-    <span class="tag">Python Programming</span>
-    <span class="tag">Cybersecurity Awareness</span>
-    <span class="tag">Problem Solving</span>
-    <span class="tag">Documentation</span>
-    <span class="tag">Customer Service</span>
-    <span class="tag">Team Collaboration</span>
-    <span class="tag">Troubleshooting</span>
-  </section>
+  <h3>Accountability Timeline</h3>
+  <p>Weekly self-review, monthly goal tracking, and semester reflection report.</p>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Python Programming</li>
+    <li>Technical Support</li>
+    <li>Cybersecurity Awareness</li>
+    <li>Problem Solving</li>
+    <li>Team Collaboration</li>
+  </ul>
+</section>
 
-    <div class="project-card">
-      <h3>Password Strength Checker</h3>
-      <p>
-        Developed a Python application that evaluates password strength
-        using complexity requirements, dictionary word detection,
-        and weak password checks.
-      </p>
-    </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
 
-    <div class="project-card">
-      <h3>Water Flow Programming Project</h3>
-      <p>
-        Built and tested Python functions related to water pressure
-        calculations while applying debugging and validation techniques.
-      </p>
-    </div>
+  <div class="project-card">
+    <h3>Password Strength Checker</h3>
+    <p>Evaluates password strength using rules and dictionary checks.</p>
+  </div>
 
-    <div class="project-card">
-      <h3>Technical Support Simulations</h3>
-      <p>
-        Practiced real-world troubleshooting scenarios to strengthen
-        customer support and analytical problem-solving skills.
-      </p>
-    </div>
+  <div class="project-card">
+    <h3>Water Flow Project</h3>
+    <p>Python-based simulation of water pressure calculations.</p>
+  </div>
+</section>
 
-  </section>
+<!-- SPIRITUAL FINAL -->
+<section id="spiritualfinal">
+  <h2>Final Spiritual Progression Portfolio</h2>
 
-  <section id="task1">
-    <h2>Task 1: Spiritual Progression Portfolio Enhancement</h2>
+  <p>This section reflects my growth in faith in Jesus Christ, service, and disciple leadership.</p>
 
-    <h3>Christlike Attributes Integration</h3>
+  <p>I have strengthened Christlike attributes such as faith, humility, patience, and diligence through IT 497.</p>
 
-    <p>
-      Throughout this course, I have intentionally worked to integrate
-      Christlike attributes such as faith, integrity, humility, patience,
-      service, and diligence into both my personal and professional life.
-    </p>
+  <div class="highlight-box">
+    Faith in Jesus Christ • Service • Integrity • Discipleship • Continuous Growth
+  </div>
 
-    <div class="highlight-box">
-      <strong>Key Christlike Attributes:</strong><br>
-      Faith • Integrity • Humility • Patience • Service • Diligence
-    </div>
+  <p>Key scripture guidance: Proverbs 3:5–6, Alma 37:6, Matthew 5:16</p>
+</section>
 
-    <p>
-      These attributes influence how I approach challenges, work with others,
-      and make decisions in academic and professional environments.
-    </p>
+<!-- PROFESSIONAL FINAL -->
+<section id="professionalfinal">
+  <h2>Final Professional Growth Portfolio</h2>
 
-    <h3>Recognizing Personal Warning Signs</h3>
+  <p>This reflects alignment with SMART goals, technical development, and ethical growth.</p>
 
-    <p>
-      I have learned to recognize warning signs such as stress,
-      discouragement, impatience, procrastination, and loss of focus.
-    </p>
+  <ul>
+    <li>Improved Python programming and troubleshooting skills</li>
+    <li>Developed leadership and teamwork experience</li>
+    <li>Strengthened ethical decision-making in IT scenarios</li>
+    <li>Prepared for future IT career opportunities</li>
+  </ul>
+</section>
 
-    <p>
-      When these warning signs appear, I seek realignment through prayer,
-      scripture study, reflection, goal review, and service to others.
-    </p>
+<!-- REFLECTION -->
+<section id="reflection">
+  <h2>Reflection Essay</h2>
 
-    <h3>Portfolio Review and Reflection</h3>
+  <p>
+    Throughout IT 497, I have grown significantly in technical ability, ethical reasoning,
+    leadership, and spiritual understanding. My journey has helped me connect classroom
+    learning with real-world IT applications.
+  </p>
 
-    <p>
-      Reviewing my portfolio allowed me to see meaningful connections between
-      technical development, ethical growth, leadership experiences, and
-      spiritual progression. The portfolio reflects not only what I have
-      accomplished but also who I am becoming.
-    </p>
-  </section>
+  <p>
+    I have developed stronger problem-solving skills, improved my Python programming ability,
+    and learned how to approach technical challenges with patience and structure. Beyond technical
+    skills, I have learned the importance of integrity, service, and Christlike leadership in all
+    professional environments.
+  </p>
 
-  <section id="task2">
-    <h2>Task 2: Usability Testing & Ethical Dilemma Reflection</h2>
+  <p>
+    Spiritually, I have strengthened my relationship with Jesus Christ through consistent
+    reflection, prayer, and application of gospel principles. This has influenced how I approach
+    challenges and interact with others.
+  </p>
 
-    <h3>Usability Testing Report</h3>
+  <p>
+    Overall, this course has helped me grow into a more capable, ethical, and service-oriented
+    future IT professional.
+  </p>
+</section>
 
-    <ul>
-      <li>Verified navigation structure and page organization.</li>
-      <li>Improved mobile responsiveness across devices.</li>
-      <li>Enhanced readability through spacing and typography.</li>
-      <li>Maintained a consistent visual design and color palette.</li>
-      <li>Improved accessibility and user experience.</li>
-      <li>Added interactive elements and visual feedback.</li>
-    </ul>
+<!-- PEER REVIEW -->
+<section id="peerreview">
+  <h2>Peer Review Report</h2>
 
-    <h3>Design & User Experience Enhancements</h3>
+  <h3>Feedback Received</h3>
+  <p>Improve navigation clarity, add more reflection depth, and strengthen project descriptions.</p>
 
-    <p>
-      Improvements included clearer navigation, responsive layouts,
-      improved content organization, enhanced readability, and visual
-      consistency throughout the portfolio.
-    </p>
+  <h3>Feedback Implemented</h3>
+  <p>Improved structure, added reflection essay, and enhanced usability with navigation and sections.</p>
+</section>
 
-    <h3>Ethical Dilemma Reflection</h3>
+<!-- FUTURE VISION -->
+<section id="future">
+  <h2>Future Vision</h2>
 
-    <p>
-      One ethical challenge frequently encountered in technology involves
-      protecting confidential information while meeting organizational
-      expectations and demands.
-    </p>
+  <p>I plan to continue developing expertise in IT, cybersecurity, and systems administration.</p>
 
-    <p>
-      If faced with a situation involving unauthorized access or disclosure
-      of sensitive information, I would follow ethical guidelines,
-      organizational policies, and legal requirements.
-    </p>
+  <ul>
+    <li>Earn industry certifications</li>
+    <li>Expand professional network</li>
+    <li>Lead IT projects</li>
+    <li>Serve communities through technology</li>
+  </ul>
+</section>
 
-    <p>
-      This reflection reinforced the importance of integrity,
-      accountability, and trust in the technology profession.
-    </p>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: tmatwale@byupathway.edu</p>
+  <p>LinkedIn: linkedin.com/in/thomas-matwale-68527929</p>
+</section>
 
-  </section>
+<!-- CONCLUSION -->
+<section id="conclusion">
+  <h2>Portfolio Conclusion</h2>
 
-  <section id="contact">
-    <h2>Contact</h2>
+  <p>
+    This portfolio represents my growth as a student, IT professional, leader, and disciple of Jesus Christ.
+  </p>
 
-    <div class="contact-info">
-      <p><strong>Email:</strong> tmatwale@byupathway.edu</p>
-      <p><strong>LinkedIn:</strong> linkedin.com/in/thomas-matwale-68527929</p>
-    </div>
-  </section>
+  <p>
+    I am committed to lifelong learning, ethical leadership, and using technology to serve others.
+  </p>
+</section>
 
-  <footer>
-    <p>
-      © 2026 Professional Portfolio |
-      Built with Discipline, Growth, Faith, and Purpose
-    </p>
-  </footer>
+<footer>
+  <p>© 2026 Professional Portfolio | Built with Purpose, Discipline, and Faith</p>
+</footer>
 
 </body>
 </html>
